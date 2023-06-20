@@ -1,0 +1,124 @@
+.simple-marquee-container * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.simple-marquee-container {
+	width: 100%;
+	/* background: white; */
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	box-sizing: border-box;
+	height: 45px;
+	position: relative;
+}
+
+.simple-marquee-container .marquee-sibling {
+	width: auto;
+	height: 45px;
+	padding: 0 1em;
+	line-height: 45px;
+	text-align: center;
+	float: left;
+	left: 0;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.simple-marquee-container .marquee-sibling .marquee-sibling-cover {
+	height: 45px;
+	margin: 0 0 0 -30px;
+	transform: skew(-25deg);
+	background: black;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+.simple-marquee-container .marquee-sibling .marquee-sibling-text {
+	color: white;
+	position: absolute;
+	transform: skew(25deg);
+	left: 28px;
+	z-index: 3;
+}
+
+.simple-marquee-container .marquee,
+.simple-marquee-container *[class^="marquee"] {
+	display: inline-block;
+	white-space: nowrap;
+	position: absolute;
+	overflow: visible;
+}
+
+.simple-marquee-container .marquee {
+	margin-left: 25%;
+}
+
+.simple-marquee-container .marquee-content-items {
+	display: inline-block;
+	height: 45px;
+	position: relative;
+	background: white;
+}
+
+.simple-marquee-container .marquee-content-items::after {
+	background-image: url(./separator.png);
+	background-size: 45px 45px;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	margin: 0 10px;
+	content: "";
+}
+
+.simple-marquee-container .marquee-content-items li {
+	display: inline-block;
+	line-height: 45px;
+	color: #c00000;
+	height: 45px;
+	transform: skew(-25deg);
+	background: black;
+	overflow: hidden;
+	position: relative;
+	margin: 0 4px 0 0;
+}
+
+li.na {
+	border-bottom: #020BB6 4px solid !important;
+}
+
+li.sa {
+	border-bottom: #697A21 4px solid !important;
+}
+
+li.emea {
+	border-bottom: #F26430 4px solid !important;
+}
+
+li.apacn {
+	border-bottom: #A657AE 4px solid !important;
+}
+
+li.apacs {
+	border-bottom: #CDA213 4px solid !important;
+}
+
+.item-text {
+	display: inline-block;
+	position: absolute;
+	transform: skew(25deg);
+	left: 24px;
+}
+
+.item-img {
+	display: inline-block;
+	/* width: 40px; */
+	height: 40px;
+	margin: 0 30px;
+	transform: skew(25deg) translate(-43%, 0%);
+	padding: 6px;
+}
