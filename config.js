@@ -6,7 +6,7 @@ config = {
         https://algs.tas.gg/api/match/<matchId>
         https://oe.tas.gg/match/<matchId>
     */
-    "matchUrl": "https://algs.tas.gg/api/match/2125",
+    "matchUrl": "https://algs.tas.gg/api/match/2127",
     "showFullName": true,
     "showLogo": true,
     "showRegion": false,

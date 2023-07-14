@@ -27,6 +27,12 @@ function processRequest(responseText) {
 
     const regex = /(\S+ [0-9]+)(,|\Z| )/g;
     const matches = points.match(regex);
+    if (matches) {
+        if (localStorage.points != matches) {
+            localStorage.points = matches;
+            location.reload(true);
+        }
+    }
 
     var title = document.getElementById("marquee-sibling-text");
     title.style = '';
